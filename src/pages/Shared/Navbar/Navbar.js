@@ -5,7 +5,7 @@ import { FiUser, FiSearch, FiShoppingCart } from "react-icons/fi";
 
 const Navbar = () => {
     return (
-        <navbar className="max-width flex items-center justify-between my-4">
+        <nav className="max-width flex items-center justify-between my-4">
             {/* Logo */}
             <div className='w-3/12'>
                 <Link to='/'><img src={`${logo}`} className='h-[30px] md:h-[50px]' alt="" /></Link>
@@ -22,7 +22,7 @@ const Navbar = () => {
                 <button><FiUser className='text-lg mr-2 md:mr-5' /></button>
                 <button><FiShoppingCart className='text-lg' /></button>
             </div>
-        </navbar>
+        </nav>
     );
 };
 

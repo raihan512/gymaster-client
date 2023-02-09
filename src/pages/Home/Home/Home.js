@@ -1,11 +1,14 @@
 import React from 'react';
+import Blog from '../Blog/Blog';
+import Category from '../Category/Category';
 import Hero from '../Hero/Hero';
 
 const Home = () => {
     return (
         <div>
-            <h2>Home</h2>
             <Hero></Hero>
+            <Category></Category>
+            <Blog></Blog>
         </div>
     );
 };
