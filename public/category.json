@@ -1,0 +1,17 @@
+[
+    {
+        "_id": 1,
+        "img": "https://i.ibb.co/348Q85W/category1.png",
+        "title": "জিমের সরঞ্জাম"
+    },
+    {
+        "_id": 2,
+        "img": "https://i.ibb.co/hHynWfX/category2.png",
+        "title": "জিমের পোশাক"
+    },
+    {
+        "_id": 3,
+        "img": "https://i.ibb.co/kQ7Kx2T/category3.png",
+        "title": "সাপ্লিমেন্টস"
+    }
+]
