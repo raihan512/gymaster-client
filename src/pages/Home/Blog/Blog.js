@@ -9,7 +9,6 @@ const Blog = () => {
             .then(data => setBlogs(data))
     }, [])
 
-    console.log(blogs)
     return (
         <section className='max-width mt-10'>
             {/* section title */}

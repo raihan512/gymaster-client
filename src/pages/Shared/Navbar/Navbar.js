@@ -13,7 +13,7 @@ const Navbar = () => {
             {/* SearchBox */}
             <div className="w-6/12">
                 <form action="" className='border flex items-center'>
-                    <input type="text" placeholder="Search…" className="p-1 md:p-2 w-full" />
+                    <input type="text" placeholder="অনুসন্ধান করুন..." className="p-1 md:p-2 w-full" />
                     <button className='bg-[#3E084C] text-white p-2 md:p-3'><FiSearch className='' /></button>
                 </form>
             </div>

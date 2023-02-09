@@ -13,7 +13,7 @@ const BlogItem = ({ blog }) => {
             {/* author */}
             <div className='flex items-center'>
                 {/* <div className='rounded-full shadow-xl'> */}
-                <img src={`${authorImg}`} className='w-12 h-12 rounded-full mr-2 drop-shadow-2xl' alt="" />
+                <img src={`${authorImg}`} className='w-12 h-12 rounded-full mr-2 drop-shadow-2xl -z-50' alt="" />
                 {/* </div> */}
                 <div>
                     <h5 className='text-sm text-[#101828]'>{author}</h5>

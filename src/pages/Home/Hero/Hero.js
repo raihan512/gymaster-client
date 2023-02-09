@@ -21,21 +21,21 @@ const Hero = () => {
             <Slider ref={heroSlider} {...settings}>
                 {/* Slider Item */}
                 <div>
-                    <div style={{ backgroundImage: `url(${HeroBanner})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'top right' }}>
+                    <div style={{ backgroundImage: `url(${HeroBanner})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'top right', zIndex: '-50' }}>
                         <div className="max-width py-24 md:py-32 lg:py-40 xl:py-56">
-                            <h3 className='text-xl md:text-3xl lg:text-4xl xl:text-6xl text-[#3E084C] font-bold pb-10'>ব্যায়াম করুন, সুস্থ থাকুন</h3>
-                            <p className='text-lg md:text-xl lg:text-2xl pb-12'>সকল প্রোডাক্টের উপর ৩০% ছাড়!</p>
-                            <button className='text-base md:text-lg lg:text-xl text-white rounded-md py-2 px-8 bg-[#3E084C]'>ক্লিক করুন</button>
+                            <h3 className='text-xl md:text-3xl lg:text-4xl xl:text-6xl text-[#3E084C] font-bold pb-5 md:pb-10'>ব্যায়াম করুন, সুস্থ থাকুন</h3>
+                            <p className='text-lg md:text-xl lg:text-2xl pb-5 md:pb-12'>সকল প্রোডাক্টের উপর ৩০% ছাড়!</p>
+                            <button className='text-base md:text-lg lg:text-xl leading-3 text-white rounded-md py-4 px-8 bg-[#3E084C]'>ক্লিক করুন</button>
                         </div>
                     </div>
                 </div>
                 {/* Slider Item */}
                 <div>
-                    <div style={{ backgroundImage: `url(${HeroBanner})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'top right' }}>
+                    <div style={{ backgroundImage: `url(${HeroBanner})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'top right', zIndex: '-50' }}>
                         <div className="max-width py-24 md:py-32 lg:py-40 xl:py-56">
-                            <h3 className='text-xl md:text-3xl lg:text-4xl xl:text-6xl text-[#3E084C] font-bold pb-10'>ব্যায়াম করুন, সুস্থ থাকুন</h3>
-                            <p className='text-lg md:text-xl lg:text-2xl pb-12'>সকল প্রোডাক্টের উপর ৩০% ছাড়!</p>
-                            <button className='text-base md:text-lg lg:text-xl text-white rounded-md py-2 px-8 bg-[#3E084C]'>ক্লিক করুন</button>
+                            <h3 className='text-xl md:text-3xl lg:text-4xl xl:text-6xl text-[#3E084C] font-bold pb-5 md:pb-10'>ব্যায়াম করুন, সুস্থ থাকুন</h3>
+                            <p className='text-lg md:text-xl lg:text-2xl pb-5 md:pb-12'>সকল প্রোডাক্টের উপর ৩০% ছাড়!</p>
+                            <button className='text-base md:text-lg lg:text-xl leading-3 text-white rounded-md py-4 px-8 bg-[#3E084C]'>ক্লিক করুন</button>
                         </div>
                     </div>
                 </div>
