@@ -7,19 +7,19 @@ const Navbar = () => {
     return (
         <nav className="max-width flex items-center justify-between my-4">
             {/* Logo */}
-            <div className='w-3/12'>
-                <Link to='/'><img src={`${logo}`} className='h-[30px] md:h-[50px]' alt="" /></Link>
+            <div>
+                <Link to='/'><img src={`${logo}`} className='max-w-[90px] md:max-w-[240px]' alt="" /></Link>
             </div>
             {/* SearchBox */}
-            <div className="w-6/12">
+            <div className='w-6/12 md:w-8/12'>
                 <form action="" className='border flex items-center'>
                     <input type="text" placeholder="অনুসন্ধান করুন..." className="p-1 md:p-2 w-full" />
                     <button className='bg-[#3E084C] text-white p-2 md:p-3'><FiSearch className='' /></button>
                 </form>
             </div>
             {/* User & Cart */}
-            <div className='w-1/12 flex justify-end'>
-                <button><FiUser className='text-lg mr-2 md:mr-5' /></button>
+            <div className='flex justify-end'>
+                <button><FiUser className='text-lg mr-1 md:mr-5' /></button>
                 <button><FiShoppingCart className='text-lg' /></button>
             </div>
         </nav>

@@ -7,9 +7,9 @@ const Login = () => {
     const onSubmit = (data) => console.log(data);
     return (
         <section className='w-11/12 md:w-8/12 lg:w-6/12  mx-auto py-20'>
-            <h2 className='text-4xl mb-10'>Login</h2>
+            <h2 className='text-2xl md:text-3xl lg:text-4xl mb-10'>Login</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid sm:grid-cols-2 gap-3">
                     <div>
                         <input type="email" placeholder='Enter your email address'
                             className='text-lg py-2 px-5 rounded-sm border border-gray-200 w-full'
