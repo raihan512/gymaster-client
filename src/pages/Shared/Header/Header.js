@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { BsTelephone } from 'react-icons/bs'
 import { FaRegEnvelope } from 'react-icons/fa'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { AuthProvider } from '../../../contexts/AuthContext/AuthContext';
 
 
 const Header = () => {
+    const navigate = useNavigate();
+    const { user, logOut } = useContext(AuthProvider);
+    const handleLogOut = () => {
+        logOut();
+        navigate('/');
+    }
     return (
         <header className=' bg-[#3E084C]'>
             {/* Header Container */}
@@ -27,8 +34,13 @@ const Header = () => {
                 </div>
                 {/* Header Authentication */}
                 <div>
-                    <button className='mr-3'><Link to='login'>লগ ইন</Link></button>
-                    <button><Link to='register'>রেজিস্টার</Link></button>
+                    {
+                        user ? <button onClick={() => handleLogOut()}>লগ আউট</button>
+                            : <>
+                                <button className='mr-3'><Link to='login'>লগ ইন</Link></button>
+                                <button><Link to='register'>রেজিস্টার</Link></button>
+                            </>
+                    }
                 </div>
             </div>
         </header>

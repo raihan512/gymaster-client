@@ -40,7 +40,7 @@ const Hero = () => {
                     </div>
                 </div>
             </Slider>
-            {/* Slider button */}
+            {/* Slider Next Prev button */}
             <div className='absolute bottom-0 right-0'>
                 <div className='flex'>
                     <button onClick={() => heroSlider.current.slickPrev()} className='bg-[#3E084C] p-3 mr-1'><GrFormPrevious className='text-white' /></button>

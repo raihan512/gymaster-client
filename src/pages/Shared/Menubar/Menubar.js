@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { HiOutlineBars3BottomRight, HiXMark } from 'react-icons/hi2'
+import { HiOutlineBars3BottomRight } from 'react-icons/hi2'
 
 const Menubar = () => {
-    const [mobileMenu, setMobileMenu] = useState(false);
+    const [showMobileMenu, setShowMobileMenu] = useState(false);
     const menuItems = <>
         <li className='mx-1.5 xl:mx-2 text-[#3E084C] font-semibold'><Link to='/'>হোম</Link></li>
         <li className='mx-1.5 xl:mx-2 transition-all hover:text-[#3E084C] hover:font-semibold'><Link to='/'>জিমের সরঞ্জাম</Link></li>
@@ -26,12 +26,12 @@ const Menubar = () => {
                 {/* Mobile Menu btn*/}
                 <div className='flex md:hidden items-center justify-end'>
                     <h3 className='text-lg font-semibold mr-1'>Menu</h3>
-                    <button onClick={() => setMobileMenu(!mobileMenu)}><HiOutlineBars3BottomRight className='text-2xl' /></button>
+                    <button onClick={() => setShowMobileMenu(!showMobileMenu)}><HiOutlineBars3BottomRight className='text-2xl' /></button>
                 </div>
             </div>
             {/* Mobile Menu */}
             {
-                mobileMenu && <div className="fixed md:hidden top-0 left-0 h-screen w-3/5 bg-[#F5F5F5] text-lg z-50">
+                showMobileMenu && <div className="fixed md:hidden top-0 left-0 h-screen w-3/5 bg-[#F5F5F5] text-lg z-50">
                     <ul className='p-3'>
                         {
                             menuItems
